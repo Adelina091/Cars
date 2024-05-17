@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAX JSON Example</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poetsen+One&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <div class="navigation">
+            <div>
+                <h1>Cars:</h1>
+            </div>
+
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="Search by name" autocomplete="off">
+                <ul id="suggestionsList" class="suggestionsList"></ul>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 random" onclick="shuffle()">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                </svg>
+            </div>
+        </div>
+        <hr class="line">
+        <div id="dataList" class="dataList">
+        </div>
+    </div>
+
+  <script src="./scripts/script.js"></script>
+  <script>
+    function shuffle() {
+      var cards = document.querySelectorAll('.card');
+      var shuffledCards = Array.from(cards).sort(() => Math.random() - 0.5);
+      var dataList = document.getElementById('dataList');
+      dataList.innerHTML = '';
+      shuffledCards.forEach(card => dataList.appendChild(card));
+    }
+  </script>
+</body>
+</html>

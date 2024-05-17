@@ -1,0 +1,145 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+
+}
+.dataList{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.bigFont{
+    font-size: 25px;
+    padding: 10px;
+}
+.mediumFont{
+    font-size: 15px;
+    padding: 10px;
+}
+.card{
+    border: 2px solid cyan;
+    border-radius: 10px;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeInAnimation ease 1s;
+    align-items: center;
+}
+button{
+    border-radius: 10px;
+    border: 2px solid cyan;
+    width: 100px;
+    background-color: white;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+button:hover{
+    background: linear-gradient(90deg, rgba(67,240,235,1) 0%, rgba(132,217,231,1) 50%, rgba(61,242,225,1) 100%);
+    border-radius: 15px;
+}
+
+.green{
+    background-color: rgb(126, 224, 126);
+    margin-top: 30px;
+    border: 2px solid rgb(126, 224, 126);
+}
+.green:hover{
+    background: rgb(94, 241, 94);
+    border-radius: 15px;
+}
+.random{
+    width: 30px;
+}
+img{
+    width: 500px;
+    border-radius: 10px;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+}
+.search svg{
+    background: cyan;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input{
+    height: 20px;
+    outline: none;
+    border: 2px solid cyan;
+    border-radius: 10px;
+    padding: 5px;
+    width: 120px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.card img{
+    width: 550px;
+    border-radius: 8px;
+}
+.container{
+    margin: 0 auto;
+    width: 1280px;
+
+
+
+}
+.line{
+    color: cyan;
+}
+.detailsContainer{
+    border: 2px solid cyan;
+    border-radius: 10px;
+}
+.block{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    animation: fadeInAnimation ease 1s;
+}
+
+.detailsContainer{
+    text-align: center;
+}
+.textBlock{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
